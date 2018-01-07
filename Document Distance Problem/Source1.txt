@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int min , max = 0, ar[5]{},i=0;
+	
+	for (int i = 0; i < 5; i++)
+		cin >> ar[i];
+	min = ar[0];
+	for (int i = 0;i<5; i++){
+		
+		if (min >= ar[i])
+		{
+			min = ar[i];
+			max = ar[i];
+		}
+		if (max < ar[i])
+			max = ar[i];
+	}
+	cout << max - min << endl;
+
+
+
+	system("pause");
+	return 0;
+}
